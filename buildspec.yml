@@ -2,7 +2,8 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
+      run-as: root
+      runtime-versions:
       java: jdk1.8.0_192
   build:
     commands:
