@@ -10,7 +10,7 @@ import java.util.Collection;
 public class EmployeeController {
     @Autowired
     EmployeeService employeeService;
-    @GetMapping("/getName")
+    @GetMapping("/get")
     public Collection<Employee> getEmployee()
     {
       return  this.employeeService.getEmployee();
