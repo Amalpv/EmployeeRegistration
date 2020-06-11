@@ -11,9 +11,10 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - mvn package
+      - mvn clean package
 artifacts:
   files:
-    - target/employeeregistration-1.0-SNAPSHOT.jar
+    - '**/*.jar'
+ 
     
   discard-paths: yes
