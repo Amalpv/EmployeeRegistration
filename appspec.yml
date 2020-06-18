@@ -4,6 +4,7 @@ files:
   - source: ./
     destination: /home/ec2-user/java
 hooks:
-  ApplicationStart:
-    - location: runapp.sh
+ BeforeInstall:
+    - location: removeapp.sh
       runas: ec2-user
+ 
