@@ -1,5 +1,9 @@
 version: 0.0
 os: linux
 files:
-  - source: ./EmployeeRegistration-0.0.1-SNAPSHOT.jar
-    destination: /java
+  - source: ./
+    destination: /home/ec2-user/java
+hooks:
+  ApplicationStart:
+    - location: runapp.sh
+      runas: ec2-user
