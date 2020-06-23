@@ -16,6 +16,8 @@ artifacts:
   files:
     - '**/*.jar'
     - appspec.yml
+    - removeapp.sh
+    - runapp.sh
     
     
   discard-paths: yes
